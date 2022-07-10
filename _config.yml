@@ -102,4 +102,8 @@ theme: yearn
 # Deployment
 ## Docs: https://hexo.io/docs/one-command-deployment
 deploy:
-  type: ""
+  type: git
+  repo: git@github.com:zhengzhuang96/blog.git
+  branch: hexo
+  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
+
