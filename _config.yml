@@ -105,5 +105,4 @@ deploy:
   type: git
   repo: git@github.com:zhengzhuang96/blog.git
   branch: hexo
-  message: Site updated: {{ now('YYYY-MM-DD HH:mm:ss') }})
-
+  message: now('YYYY-MM-DD HH:mm:ss')
