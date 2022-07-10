@@ -104,5 +104,5 @@ theme: yearn
 deploy:
   type: git
   repo: git@github.com:zhengzhuang96/blog.git
-  branch: hexo
+  branch: master
   message: now('YYYY-MM-DD HH:mm:ss')
