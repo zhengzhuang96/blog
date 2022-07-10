@@ -104,5 +104,5 @@ theme: yearn
 deploy:
   type: git
   repo: git@github.com:zhengzhuang96/blog.git
-  branch: master
+  branch: hexo
   message: 'Daily updated：{{now("YYYY-MM-DD HH:mm:ss")}} by Never_yu personal PC'
