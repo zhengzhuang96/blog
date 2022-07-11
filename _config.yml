@@ -13,8 +13,8 @@ timezone: Asia/Shanghai
 
 # URL
 ## Set your site url here. For example, if you use GitHub Page, set url as 'https://username.github.io/project'
-url: https://blog-zhengzhuang.vercel.app
-# root: /blog
+url: https://zhengzhuang96.github.io
+root: /blog
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 pretty_urls:
