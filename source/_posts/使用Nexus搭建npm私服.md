@@ -1,6 +1,5 @@
 ---
 title: 使用Nexus搭建npm私服
-date: 2022-07-10 18:36:43
 tags:
 categories: 前端
 ---
