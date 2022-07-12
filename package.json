@@ -24,5 +24,19 @@
     "hexo-renderer-stylus": "^2.1.0",
     "hexo-server": "^3.0.0",
     "hexo-theme-landscape": "^0.0.3"
-  }
+  },
+  "description": "Hello, I'm Zheng, born in 1996. I am a front-end development engineer.",
+  "main": "index.js",
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhengzhuang96/blog.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/zhengzhuang96/blog/issues"
+  },
+  "homepage": "https://github.com/zhengzhuang96/blog#readme"
 }
