@@ -4,7 +4,7 @@
 $ brew install mysql
 ```
 
-![image](https://user-images.githubusercontent.com/29434858/77275756-0d595600-6cf4-11ea-8e1e-00abb7567c04.png)
+![image](https://tva1.sinaimg.cn/large/e6c9d24ely1h45d6gpb56j20u017x7bf.jpg)
 
 2. 我们现在已经配置成功了，需要设置根密码，它让我们输入mysql_secure_installation
 
