@@ -1,0 +1,94 @@
+<div class="left-aside">
+    <div class="face-img"><img src="<%=theme.avatar%>"></div>
+    <div class="intro-word">
+        <h2><%=theme.author%></h2>
+        <p><%=theme.description%></p>
+    </div>
+    <div class="sns">
+        <ul>
+            <% for (var i in theme.subnav){ %>
+            <li>
+                <a class="<%= i %>" target="_blank" href="<%- url_for(theme.subnav[i]) %>" title="<%= i %>">
+                    <img src="<%= config.root %>./img/icon-<%= i %>.png" alt="<%= i %>" data-tooltip="<%= i %>">
+                </a>
+            </li>
+            <%}%>
+        </ul>
+    </div>
+</div>
+<div class="right-aside">
+    <div class="right-nav ms">
+        <div class="main">
+          <svg id="nav-menu" class="icon icon-menu" aria-hidden="true">
+            <use xlink:href="#icon-menu"></use>
+          </svg>
+          <ul class="left">
+              <% for (var i in theme.menu){ %>
+              <li>
+                  <a href="<%- url_for(theme.menu[i]) %>">
+                      <%= i %>
+                  </a>
+              </li>
+              <% } %>
+          </ul>
+          <div class="search">
+            <div class="search-box">
+              <input type="search"  id="search" class="input-search" placeholder="搜索">
+              <i class="icon-search"></i>
+              <div class="search-result-box">
+                <ul id="search-result"></ul>
+              </div>
+            </div>
+            <svg id="nav-search" class="icon icon-search" aria-hidden="true">
+              <use xlink:href="#icon-search"></use>
+            </svg>
+          </div>
+        </div>
+    </div>
+    <div class="right-main">
+        <div class="category">
+            <ul>
+                <li><a href="<%- config.root %>" class="<%- is_home() ? "active" : null %>">最新</a></li>
+                <% site.categories.sort('name').each(function(item){ %>
+                    <li><a href="<%- config.root %><%- item.path %>" class="<%- is_current(item.path) ? "active" : null %>"><%= item.name %></a></li>
+                <% }) %>
+            </ul>
+        </div>
+        <div class="clear"></div>
+        <div class="list">
+            <div>
+                <% page.posts.each(function(post, index){ %>
+                <%- partial('_partial/post/title',{post: post,index: true}) %>
+                <% }) %>
+                <%- partial('_partial/paginator') %>
+            </div>
+        </div>
+        <div class="clear"></div>
+        <div class="hosted">
+          <ul>
+            <li class="coding">
+              <a href="https://coding.net/pages">
+                <img src="<%= config.root %>./img/coding.png">
+              </a>
+            </li>
+            <li class="github-pages">
+              <a href="https://pages.github.com">
+                <img src="<%= config.root %>./img/github-pages.png">
+              </a>
+            </li>
+          </ul>
+        </div>
+    </div>
+</div>
+<script>
+  var homeLeftBgArr = '<%- theme.leftBackground %>'.split(',');
+  var homeLeftBgArrLen = homeLeftBgArr.length;
+  var leftBackgroundUrl = homeLeftBgArr[Math.floor(Math.random() * homeLeftBgArrLen)];
+  var homeLeftAsideNode = document.getElementsByClassName('left-aside')[0];
+  if (homeLeftAsideNode) {
+    homeLeftAsideNode.style.backgroundImage = 'url(' + leftBackgroundUrl + ')';
+  }
+</script>
+<script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+</script>
+<%- partial('_partial/script.ejs') %>

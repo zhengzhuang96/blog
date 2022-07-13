@@ -1,0 +1,34 @@
+{
+  "name": "VicSugar",
+  "version": "1.2.1",
+  "description": "a theme for hexo",
+  "scripts": {
+    "dev": "webpack --config webpack.dev.js",
+    "dist": "webpack --config webpack.prod.js",
+    "start": "dev"
+  },
+  "keywords": [
+    "hexo",
+    "theme",
+    "blog"
+  ],
+  "main": "index.js",
+  "repository": "https://github.com/Youthink/VicSugar.git",
+  "author": "Youthink <hufy78@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^8",
+    "clean-webpack-plugin": "^0.1.17",
+    "css-loader": "^0.28.4",
+    "extract-text-webpack-plugin": "^4.0.0-beta.0",
+    "html-webpack-plugin": "^3",
+    "node-sass": "^4",
+    "postcss-loader": "^2.0.6",
+    "sass-loader": "^7",
+    "style-loader": "^0.21",
+    "webpack": "^4",
+    "webpack-cli": "^3.0.8",
+    "webpack-dev-server": "^3",
+    "webpack-merge": "^4.1.3"
+  }
+}

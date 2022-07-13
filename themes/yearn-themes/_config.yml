@@ -1,0 +1,71 @@
+# SubNav
+menu:
+  #关于我: /2014/aboutme/
+  # 友链: /2014/friends/
+subnav:
+  github: "https://github.com/zhengzhuang96"
+  weibo: "https://weibo.com/u/3553141855"
+  #zhihu: "https://www.zhihu.com/people/888888"
+  email: "zheng960108@163.com"
+  # sf: "https://segmentfault.com/u/555555"
+  # rss: "/atom.xml"
+
+description: 小郑的博客，爱生活，爱编码
+
+# SEO
+seo_keywords: 郑壮,小郑,编程,程序员,个人博客,zhengzhuang,Web
+seo_description: 小郑的个人博客,郑壮的博客,编程随想
+
+favicon: /favicon.ico
+
+#头像url
+avatar: https://avatars.githubusercontent.com/u/29434858?s=400&u=885f44284433356b5cb772292c769166abdd0fd1&v=4
+
+# 首页左侧边栏背景图片
+# 可配置多个 随机挑选一张
+leftBackground:
+  - https://cdn.pixabay.com/photo/2022/07/06/18/34/florence-7305768_960_720.jpg
+  - https://cdn.pixabay.com/photo/2022/07/04/08/36/city-7300691_960_720.jpg
+  - https://cdn.pixabay.com/photo/2022/05/12/16/04/trees-7191822_960_720.png
+  - https://cdn.pixabay.com/photo/2022/07/01/20/47/lighthouse-7296247_960_720.jpg
+  - https://cdn.pixabay.com/photo/2022/07/06/13/18/guitar-7305137_960_720.jpg
+  - https://cdn.pixabay.com/photo/2022/06/21/21/56/konigssee-7276587_960_720.jpg
+
+# 展示更新时间
+display_updated: true
+
+# 文章页的关于转载链接
+copyright_url: zhengzhuang96.github.io/blog
+
+# 底部的备案信息等
+copyright_date: 2017-2022
+beian_info: 小郑的博客 京ICP备没有号
+
+# Online contact
+daovoice: true
+daovoice_app_id: 1ff30348
+
+# Data statistics
+baidu_analytics: true
+baidu_analytics_code: ae46047b557574a12bba544bea130043
+
+#Comments
+# https://github.com/gitalk/gitalk
+gitalk: true
+gitalk_clientID: 3c8ae3644e1635a79eca
+gitalk_clientSecret: 20ec6ebef34766a59c7d497ad33777f2c4b0fd78
+gitalk_repo: zhengzhuang96.github.io/blog
+gitalk_owner: zhengzhuang96
+gitalk_admin: zhengzhuang96
+# 是否启用评论框的全屏遮罩效果
+gitalk_distractionFreeMode: false
+
+# Console
+console: true
+console_color: "#6190e8"
+console_config:
+  - '\n欢迎访问，围观小郑的博客(づ｡◕‿‿◕｡)づ！\n'
+
+# 长时间未更新的博文显示提醒
+overdue_auto_all: true
+overdue_remind: 本文最后更新于$day天前，文中所描述的信息可能已发生改变。
