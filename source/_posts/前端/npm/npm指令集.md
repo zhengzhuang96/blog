@@ -4,10 +4,6 @@ tags:
 categories: 前端
 ```
 
-
-
-### 安装依赖
-
 1. 全局安装
 
    ```bash
@@ -34,3 +30,16 @@ categories: 前端
    $ npm i **
    ```
 
+3. 清除缓存
+
+   ```bash
+   npm cache clean -f
+   ```
+
+4. 查看npm全局安装的包
+
+   ```bash
+   npm list -g --depth 0
+   ```
+
+   
