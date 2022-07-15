@@ -1,3 +1,10 @@
+---
+title: mac下docker安装kenkins
+date: 2022-07-13 15:50:56
+tags:
+categories: mac
+---
+
 ### mac下docker安装kenkins
 
 ##### 1: 新建本地挂载文件地址

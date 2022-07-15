@@ -2,7 +2,7 @@
 title: 安卓打包icon及其启动页图片大小
 date: 2022-07-13 15:35:01
 tags:
-categories: 安卓
+categories: android
 ---
 
 **### 安卓打包 icon**

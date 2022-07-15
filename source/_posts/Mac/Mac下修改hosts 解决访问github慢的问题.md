@@ -1,3 +1,10 @@
+---
+title: MAC上安装brew方式及使用技巧
+date: 2022-07-13 15:50:56
+tags:
+categories: mac
+---
+
 Mac下修改hosts 解决访问github慢的问题
 mac下hosts文件在 /etc/hosts。
 

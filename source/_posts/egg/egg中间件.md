@@ -1,4 +1,9 @@
-#### Egg基础
+---
+title: Egg中间件
+date: 2022-07-15 13:42:12
+tags:
+categories: egg
+---
 
 ##### 在框架和插件中使用中间件
 框架和插件不支持在 config.default.js 中匹配 middleware，需要通过以下方式：

@@ -1,3 +1,10 @@
+---
+title: Mac下使用 brew 安装mysql
+date: 2022-07-13 15:50:56
+tags:
+categories: mysql
+---
+
 ### 打开控制台
 
 ```
