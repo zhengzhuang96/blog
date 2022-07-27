@@ -8,7 +8,7 @@ categories: egg
 #### egg-swagger-doc
 
 ##### 输入安装
-```js
+```bash
 $ npm i egg-swagger-doc --save // 自动生成接口描述配置
 ```
 
