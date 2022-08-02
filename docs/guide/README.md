@@ -1,10 +1,3 @@
-<!--
- * @Author: {zhengzhuang}
- * @Date: 2022-07-29 17:54:18
- * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 13:39:03
- * @Description: In User Settings Edit
--->
 # About Me
 Hello, I'm Zheng, born in 1996. I am a front-end development engineer.
 
