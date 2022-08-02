@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 11:21:29
+ * @LastEditTime: 2022-08-02 11:41:49
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -42,7 +42,7 @@ export const sidebar: SidebarConfig = {
         '前端基础设施建设',
         '使用Nexus搭建npm私服',
         'package.json中版本号前面~和^的区别',
-        '/frontend/npm/发布npm包到官方仓库',
+        '发布npm包到官方仓库',
       ],
     },
   ],
