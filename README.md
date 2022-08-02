@@ -7,8 +7,6 @@ Individuals just prefer to research technology, share technology, record their l
 
 个人只是比较喜欢研究技术，分享技术，记录自己学习的瞬间，立志让自己的技术得到更全面的升级，我一直在路上。
 
-[博客文章快速定位](#blogArticles)
-
 # 专栏
 From here you can find all my blog links
 
