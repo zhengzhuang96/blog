@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 13:34:44
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 13:43:26
+ * @LastEditTime: 2022-08-02 14:02:16
  * @Description: In User Settings Edit
  */
 import { defaultTheme, defineUserConfig } from 'vuepress'
@@ -13,9 +13,7 @@ export default defineUserConfig({
   title: '北关尔士',  // 显示在左上角的网站名称
   base: '/', // 项目基础路径
   lang: 'zh-CN', // 项目语言
-  head: [
-    ['link', { rel: 'icon', href: '/assets/favicon.ico' }]
-  ],
+  head: [['link', { rel: 'icon', href: '/favicon.ico' }]],
   description: '记录我生活的点点积极', // 网站描述
   // 主题
   theme: defaultTheme({

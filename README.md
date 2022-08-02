@@ -1,10 +1,3 @@
-<!--
- * @Author: {zhengzhuang}
- * @Date: 2022-08-02 11:33:28
- * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 11:33:31
- * @Description: In User Settings Edit
--->
 # About Me
 Hello, I'm Zheng, born in 1996. I am a front-end development engineer.
 
@@ -21,8 +14,8 @@ From here you can find all my blog links
 
 从这里可以找到关于的我所有博客链接
 
-* 掘金：https://juejin.im/user/5a12900351882509e54348ac
-* segmentfault：https://segmentfault.com/u/zhengzhuang96
+* [github](https://github.com/zhengzhuang96)
+ * [掘金](https://juejin.im/user/5a12900351882509e54348ac)
 
 
 
