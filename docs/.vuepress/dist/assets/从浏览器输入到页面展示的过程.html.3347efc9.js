@@ -1,0 +1,1 @@
+import{_,o as e,c}from"./app.73a0ea12.js";const r={};function t(o,a){return e(),c("div")}var s=_(r,[["render",t],["__file","\u4ECE\u6D4F\u89C8\u5668\u8F93\u5165\u5230\u9875\u9762\u5C55\u793A\u7684\u8FC7\u7A0B.html.vue"]]);export{s as default};

@@ -1,4 +1,4 @@
-js 和 ts 区别
+<!-- js 和 ts 区别
 
 1. 语言层面：JavaScript和TypeScript都是ECMAScript（ECMA-262）的具体实现。
 2. 执行环境层面：浏览器引擎和Node.js都能够直接运行JavaScript，但无法直接运行TypeScript。
@@ -325,4 +325,4 @@ https://juejin.cn/post/6861768102296682503
 4. unknow 可以使用在catch 中 代替any
 5. Insiders 编辑器支持部分编辑/加载模式
 6. /** @deprecated */ 支持
-
+ -->

@@ -1,0 +1,8 @@
+import{_ as n,o as s,c as r,a as e}from"./app.73a0ea12.js";const c={},t=e("p",null,"https://blog.csdn.net/weixin_30925411/article/details/100090840",-1),o=e("p",null,"f1('abc', 123, {b:3}); // 10, 1000s f1('abc', 123, {b:3}); // 10, 1000s",-1),a=e("p",null,"function cache(f) { let objCache = {} return function () { let curArgs = '' // \u8FD9\u91CC\u4F7F\u7528\u6DF1\u590D\u5236\u4F1A\u597D\u70B9 for (let i = 0; i < arguments.length; i++) { if (Array.isArray(arguments[i])) { curArgs += arguments[i].join(',') } else if (typeof arguments[i] === 'object') { curArgs += JSON.stringify(arguments[i]) } else { curArgs += arguments[i] } }",-1),i=e("pre",null,[e("code",null,`// curArgs
+if (curArgs) {
+  return objCache[curArgs]
+} else {
+  objCache[curArgs] = f(curArgs)
+  return objCache[curArgs]
+}
+`)],-1),l=e("p",null,"} }",-1),u=e("p",null,"f2 = cache(f1); f2('abc', 123, {b:3}); // 10, 1000s f2('abc', 123, {b:3}); // 10, 0s",-1),_=e("p",null,"const memorize = function(fn) { const cache = {} // \u5B58\u50A8\u7F13\u5B58\u6570\u636E\u7684\u5BF9\u8C61 return function(...args) { // \u8FD9\u91CC\u7528\u5230\u6570\u7EC4\u7684\u6269\u5C55\u8FD0\u7B97\u7B26 const _args = JSON.stringify(args) // \u5C06\u53C2\u6570\u4F5C\u4E3Acache\u7684key return cache[_args] || (cache[_args] = fn.apply(fn, args)) // \u5982\u679C\u5DF2\u7ECF\u7F13\u5B58\u8FC7\uFF0C\u76F4\u63A5\u53D6\u503C\u3002\u5426\u5219\u91CD\u65B0\u8BA1\u7B97\u5E76\u4E14\u7F13\u5B58 } }",-1),f=e("p",null,"const add = function(a, b) { console.log('\u5F00\u59CB\u7F13\u5B58') return a + b }",-1),g=e("p",null,"const adder = memorize(add)",-1),h=[t,o,a,i,l,u,_,f,g];function d(p,b){return s(),r("div",null,h)}var A=n(c,[["render",d],["__file","\u51FD\u6570\u7F13\u5B58.html.vue"]]);export{A as default};
