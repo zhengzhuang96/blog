@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 11:41:49
+ * @LastEditTime: 2022-08-02 13:37:28
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -43,6 +43,17 @@ export const sidebar: SidebarConfig = {
         '使用Nexus搭建npm私服',
         'package.json中版本号前面~和^的区别',
         '发布npm包到官方仓库',
+      ],
+    },
+  ],
+  '/docker': [
+    {
+      text: 'docker',
+      children: [
+        'Docker安装MySQL',
+        'docker安装nginx',
+        'Docker安装Redis',
+        'docker常用命令',
       ],
     },
   ],

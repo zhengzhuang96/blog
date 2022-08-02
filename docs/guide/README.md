@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:54:18
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-07-29 17:54:21
+ * @LastEditTime: 2022-08-02 13:39:03
  * @Description: In User Settings Edit
 -->
 # About Me
@@ -19,8 +19,8 @@ From here you can find all my blog links
 
 从这里可以找到关于的我所有博客链接
 
-* 掘金：https://juejin.im/user/5a12900351882509e54348ac
-* segmentfault：https://segmentfault.com/u/zhengzhuang96
+ - [github](https://github.com/zhengzhuang96)
+ - [掘金](https://juejin.im/user/5a12900351882509e54348ac)
 
 
 
