@@ -1,9 +1,4 @@
----
-title: Ubuntu下安装AndroidStudio
-date: 2022-07-13 15:36:24
-tags:
-categories: android
----
+# Ubuntu下安装AndroidStudio
 
 # 写在前面
 

@@ -1,10 +1,3 @@
----
-title: Docker 安装 MySQL
-date: 2022-07-15 13:42:12
-tags:
-categories: docker
----
-
 # Docker 安装 MySQL
 
 ##### 查看可用的 Redis 版本

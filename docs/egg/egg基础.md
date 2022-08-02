@@ -1,9 +1,4 @@
----
-title: Egg基础
-date: 2022-07-15 13:42:12
-tags:
-categories: egg
----
+# Egg基础
 
 #### Egg基础
 

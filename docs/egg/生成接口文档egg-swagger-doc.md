@@ -1,9 +1,4 @@
----
-title: 生成接口文档egg-swagger-doc
-date: 2022-07-15 13:42:12
-tags:
-categories: egg
----
+# 生成接口文档egg-swagger-doc
 
 #### egg-swagger-doc
 

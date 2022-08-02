@@ -1,9 +1,4 @@
----
-title: mysql 基础操作
-date: 2022-07-13 15:50:56
-tags:
-categories: mysql
----
+# mysql 基础操作
 
 ### mysql 命令行
 

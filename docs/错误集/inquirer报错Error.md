@@ -1,9 +1,6 @@
----
-title: inquirer报错Error
-date: 2022-07-10 15:40:12
-tags:
-categories: 前端
----
+# inquirer报错Error
+
+### 报错内容
 
 ```bash
 $ node dist/index.js create testName
