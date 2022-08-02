@@ -1,1 +1,0 @@
-const e=JSON.parse('{"key":"v-44f34e15","path":"/interview/react/MVC,MVVM,MVP.html","title":"","lang":"zh-CN","frontmatter":{},"excerpt":"","headers":[],"git":{"updatedTime":1659411160000,"contributors":[{"name":"\u90D1\u58EE","email":"zhengzhuang@zhengzhngdeMBP2.www.idazoo.com","commits":1}]},"filePathRelative":"interview/react/MVC,MVVM,MVP.md"}');export{e as data};
