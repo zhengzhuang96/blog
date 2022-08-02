@@ -1,7 +1,0 @@
-# ignore
-node_modules/
-.deploy_git/
-public/
-*.log
-db.json
-package-lock.json
