@@ -1,9 +1,14 @@
----
-title: pnpm基础
-date: 2022-07-25 09:58:10
-tags:
-categories: 前端
----
+# pnpm基础
+
+#### 安装
+
+```bash
+# 通过 npm 安装
+$ npm install -g pnpm
+
+# 使用 HomeBrew 
+$ brew install pnpm
+```
 
 ### pnpm本地存储位置
 
@@ -16,5 +21,30 @@ Packages are hard linked from the content-addressable store to the virtual store
   Virtual store is at:             node_modules/.pnpm
 ```
 
+#### 安装依赖
 
+##### pnpm add
 
+| Command              | Meaning                       |
+| -------------------- | ----------------------------- |
+| `pnpm add sax`       | 保存到 `dependencies`         |
+| `pnpm add -D sax`    | 保存到 `devDependencies`      |
+| `pnpm add -O sax`    | 保存到 `optionalDependencies` |
+| `pnpm add -g sax`    | 全局安装软件包                |
+| `pnpm add sax@next`  | 从 `next` 标签下安装          |
+| `pnpm add sax@3.0.0` | 安装指定版本 `3.0.0`          |
+
+##### pnpm update
+
+别名: `up`, `upgrade`
+
+| Command              | Meaning                                                |
+| -------------------- | ------------------------------------------------------ |
+| `pnpm up`            | 遵循 `package.json` 指定的范围更新所有的依赖项         |
+| `pnpm up --latest`   | 更新所有依赖项，此操作会忽略 `package.json` 指定的范围 |
+| `pnpm up foo@2`      | 将 `foo` 更新到 v2 上的最新版本                        |
+| `pnpm up "@babel/*"` | 更新 `@babel` 范围内的所有依赖项                       |
+
+##### pnpm remove
+
+别名: `rm`, `uninstall`, `un`
