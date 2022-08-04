@@ -6,7 +6,7 @@
 # 通过 npm 安装
 $ npm install -g pnpm
 
-# 使用 HomeBrew 
+# 使用 HomeBrew
 $ brew install pnpm
 ```
 
