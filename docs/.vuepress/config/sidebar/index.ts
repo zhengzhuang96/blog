@@ -2,61 +2,62 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 13:37:28
+ * @LastEditTime: 2022-08-08 17:39:45
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
+import getChildren from "../../vuepress-sidebar-atuo/vuepress-sidebar-auto";
 
 export const sidebar: SidebarConfig = {
-  "/interview/css": [
+  "/interview/css/": [
     {
-      text: 'css',
-      children: [
-        '/interview/css/盒模型',
-        '/interview/css/BFC',
-        '/interview/css/link和@import的区别',
-      ],
+      text: 'css面试题',
+      children: getChildren('./docs/interview/', 'css')
     },
   ],
-  "/interview/javascript": [
+  "/interview/javascript/": [
     {
       text: 'javascript',
-      children: [
-        '/interview/javascript/变量提升',
-        '/interview/javascript/常用的设计模式',
-        '/interview/javascript/防抖和节流?',
-        '/interview/javascript/关于原型的题目',
-        '/interview/javascript/模块化机制',
-        '/interview/javascript/强缓存与协商缓存',
-      ],
+      children: getChildren('./docs/interview', 'javascript')
     },
   ],
-  '/frontend': [
+  '/frontend/': [
     {
       text: '前端',
-      children: [
-        'README',
-        '打造一款企业级cli脚手架',
-        '打造vue3组件库',
-        '将npm包发布在私有仓库（nexus）中',
-        '前端基础设施建设',
-        '使用Nexus搭建npm私服',
-        'package.json中版本号前面~和^的区别',
-        '发布npm包到官方仓库',
-      ],
+      children: getChildren('./docs/frontend', '', true)
     },
   ],
-  '/docker': [
-    {
-      text: 'docker',
-      children: [
-        'Docker安装MySQL',
-        'docker安装nginx',
-        'Docker安装Redis',
-        'docker常用命令',
-      ],
-    },
-  ],
+  // '/frontend/': [
+  //   {
+  //     text: '前端',
+  //     children: [
+  //       '/frontend/使用Nexus搭建npm私服.md',
+  //       '/frontend/前端基础设施建设.md',
+  //       '/frontend/将npm包发布在私有仓库（nexus）中.md',
+  //       '/frontend/打造vue3组件库.md',
+  //       '/frontend/打造一款企业级cli脚手架.md',
+  //       {
+  //         text: 'npm',
+  //         children: [
+  //           '/frontend/npm/mddir项目结构生成包.md',
+  //           '/frontend/npm/npm指令集.md',
+  //           '/frontend/npm/发布npm包到官方仓库.md'
+  //         ]
+  //       },
+  //     ]
+  //   }
+  // ],
+  // '/docker': [
+  //   {
+  //     text: 'docker',
+  //     children: [
+  //       'Docker安装MySQL',
+  //       'docker安装nginx',
+  //       'Docker安装Redis',
+  //       'docker常用命令',
+  //     ],
+  //   },
+  // ],
   // '/zh/advanced/': [
   //   {
   //     text: '深入',
@@ -163,5 +164,5 @@ export const sidebar: SidebarConfig = {
   //     ],
   //   },
   // ],
-  '': ['']
+  '/': ['']
 }

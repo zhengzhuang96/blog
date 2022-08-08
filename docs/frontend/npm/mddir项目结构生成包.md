@@ -1,12 +1,4 @@
----
-title: mddir项目结构生成包
-date: 2022-07-13 15:49:00
-tags:
-categories: 前端
-
----
-
-## mddir项目结构生成包
+# mddir项目结构生成包
 
 安装
 

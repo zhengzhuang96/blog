@@ -1,9 +1,4 @@
----
-title: npm指令集
-date: 2022-07-13 15:49:00
-tags:
-categories: 前端
----
+# npm指令集
 
 1. 全局安装
 
@@ -24,7 +19,7 @@ categories: 前端
    $ npm i ** --save
    # or
    $ npm i ** -S
-   
+
    # 不保存到package.json
    $ npm install **
    # or
@@ -42,5 +37,3 @@ categories: 前端
    ```bash
    npm list -g --depth 0
    ```
-
-   
