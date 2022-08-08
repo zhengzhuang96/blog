@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 18:05:41
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 18:20:33
+ * @LastEditTime: 2022-08-08 21:53:04
  * @Description: 
  */
 // docs/.vuepress/utils/genSidebar.js
@@ -23,13 +23,56 @@ function cmpMarkDown(md1, md2) {
 function getMarkDownList(path, is_sort) {
   var list = new Array();
   if (typeof path == "string" && typeof is_sort == "boolean") {
+    // console.log('path', path)
     let file_list = fs.readdirSync(path);
+
+    // let info = fs.statSync(path);
+    // console.log('info', info.isDirectory())
     for (let i = 0; i < file_list.length; i++) {
       let file = file_list[i];
-      if (file.endsWith(".md") && file.indexOf("README") == -1) {
-        list.push(file);
+      // 判断是否是文件夹
+      let info = fs.statSync(path + "/" + file);
+      if (info.isDirectory()) {
+        // console.log('file', file)
+        let md_list = getMarkDownList(path + "/" + file, is_sort);
+        console.log('md_list', md_list)
+        // TODO: 获取文件夹下的md文档列表
+        // md_list.forEach(function (item, index) {
+        //   // list.push(item);
+        //   console.log('item', item)
+        //   let children = [];
+        //   let group: any = {};
+        //   group.text = item;
+        //   // // group.collapsable = true;
+        //   // // group.sidebarDepth = 2;
+        //   // getMarkDownList(path + "/" + file, is_sort);
+        //   group.children = children;
+        //   list.push(group);
+        // });
+
+        // for (let j = 0; j < md_list.length; j++) {
+        //   // list.push(file + "/" + md_list[j]);
+        //   let children = [];
+        //   let group: any = {};
+        //   group.text = md_list[j];
+        //   // // group.collapsable = true;
+        //   // // group.sidebarDepth = 2;
+        //   getMarkDownList(path + "/" + file, is_sort);
+        //   group.children = children;
+        //   list.push(group);
+        // }
+      } else {
+        if (file.endsWith(".md")) {
+          list.push(file);
+        }
       }
     }
+
+    //   console.log('file', file)
+    //   if (file.endsWith(".md") && file.indexOf("README") == -1) {
+    //     list.push(file);
+    //   }
+    // }
     if (is_sort) {
       list.sort(cmpMarkDown);
     }
@@ -75,7 +118,7 @@ var genSidebar = {
       object.children = new Array();
 
       let md_list = getMarkDownList(target_path, is_sort);
-      console.log(md_list);
+      console.log(md_list, md_list.length);
       for (let i = 0; i < md_list.length; i++) {
         let md = md_list[i];
         let ls = md.split(".");
