@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-02 13:38:10
+ * @LastEditTime: 2022-08-08 22:11:10
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -32,6 +32,10 @@ export const navbar: NavbarConfig = [
   {
     text: 'docker',
     link: '/docker/',
+  },
+  {
+    text: 'android',
+    link: '/android/',
   },
   {
     text: 'Github',

@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 18:05:41
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 21:53:04
+ * @LastEditTime: 2022-08-08 22:09:33
  * @Description: 
  */
 // docs/.vuepress/utils/genSidebar.js
@@ -62,7 +62,7 @@ function getMarkDownList(path, is_sort) {
         //   list.push(group);
         // }
       } else {
-        if (file.endsWith(".md")) {
+        if (file.endsWith(".md") && file.indexOf("README") == -1) {
           list.push(file);
         }
       }
@@ -100,7 +100,7 @@ function trimRight(string) {
 
 var genSidebar = {
   // 生成侧边栏
-  genDefaultSidebar: function (path, name, version, is_sort, depth) {
+  genDefaultSidebar: function (path: any, name: any, version: any, is_sort: any, depth: number) {
     var result = new Array();
     var object: any = new Object();
     if (
@@ -112,7 +112,8 @@ var genSidebar = {
       if (typeof depth != "number") {
         depth = 2;
       }
-      object.text = name + "_" + version;
+      // object.text = name + "_" + version;
+      object.text = name;
       object.collapsable = false;
       object.sidebarDepth = depth;
       object.children = new Array();

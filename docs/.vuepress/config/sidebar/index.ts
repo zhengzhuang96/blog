@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 18:18:43
+ * @LastEditTime: 2022-08-08 22:10:36
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -12,24 +12,9 @@ export const sidebar: SidebarConfig = {
   '/interview/css/': genSidebar.genDefaultSidebar('./interview/css', 'css', '面试题', true, 2),
   '/interview/javascript/': genSidebar.genDefaultSidebar('./interview/javascript', 'javascript', '面试题', true, 2),
   '/frontend/': genSidebar.genDefaultSidebar('./frontend', '前端', '', false, 3),
-  // "/interview/css/": [
-  //   {
-  //     text: 'css面试题',
-  //     children: genSidebar.genDefaultSidebar('./docs/interview', 'css')
-  //   },
-  // ],
-  // "/interview/javascript/": [
-  //   {
-  //     text: 'javascript',
-  //     children: genSidebar.genDefaultSidebar('./docs/interview', 'javascript')
-  //   },
-  // ],
-  // '/frontend/': [
-  //   {
-  //     text: '前端',
-  //     children: genSidebar.genDefaultSidebar('./docs/frontend', '', true)
-  //   },
-  // ],
+  '/docker/': genSidebar.genDefaultSidebar('./docker', 'docker', '', false, 3),
+  '/android/': genSidebar.genDefaultSidebar('./android', 'android', '', false, 3),
+
   // '/frontend/': [
   //   {
   //     text: '前端',
@@ -49,17 +34,6 @@ export const sidebar: SidebarConfig = {
   //       },
   //     ]
   //   }
-  // ],
-  // '/docker': [
-  //   {
-  //     text: 'docker',
-  //     children: [
-  //       'Docker安装MySQL',
-  //       'docker安装nginx',
-  //       'Docker安装Redis',
-  //       'docker常用命令',
-  //     ],
-  //   },
   // ],
   // '/zh/advanced/': [
   //   {
