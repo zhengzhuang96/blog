@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 14:23:23
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 17:41:22
+ * @LastEditTime: 2022-08-08 17:57:33
  * @Description: 侧边栏
  */
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
@@ -37,6 +37,8 @@ function prefixPath(basePath, dirPath) {
  */
 function getPath(path, ele) {
   let item = prefixPath(path, ele);
+  // console.log('===', item, item.split('/'))
+  return item;
   if (item.split('/')[6]) {
     return item.split('/')[3] + '/' + item.split('/')[4] + '/' + item.split('/')[5] + '/' + item.split('/')[6]
   } else if (item.split('/')[5]) {
@@ -70,7 +72,7 @@ function getGroupChildren(path, ele, root, pathTrue) {
       root.push(group);
     } else {
       if (checkFileType(item)) {
-        console.log(getPath(path + "/" + ele, item))
+        // console.log(path + "/" + ele, item)
         root.push(getPath(path + "/" + ele, item));
         // if (pathTrue) {
         //   root.push(getPath(path + "/" + ele, item));

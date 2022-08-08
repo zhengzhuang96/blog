@@ -2,31 +2,34 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 17:39:45
+ * @LastEditTime: 2022-08-08 18:18:43
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
-import getChildren from "../../vuepress-sidebar-atuo/vuepress-sidebar-auto";
+import genSidebar from "../../utils/genSidebar";
 
 export const sidebar: SidebarConfig = {
-  "/interview/css/": [
-    {
-      text: 'css面试题',
-      children: getChildren('./docs/interview/', 'css')
-    },
-  ],
-  "/interview/javascript/": [
-    {
-      text: 'javascript',
-      children: getChildren('./docs/interview', 'javascript')
-    },
-  ],
-  '/frontend/': [
-    {
-      text: '前端',
-      children: getChildren('./docs/frontend', '', true)
-    },
-  ],
+  '/interview/css/': genSidebar.genDefaultSidebar('./interview/css', 'css', '面试题', true, 2),
+  '/interview/javascript/': genSidebar.genDefaultSidebar('./interview/javascript', 'javascript', '面试题', true, 2),
+  '/frontend/': genSidebar.genDefaultSidebar('./frontend', '前端', '', false, 3),
+  // "/interview/css/": [
+  //   {
+  //     text: 'css面试题',
+  //     children: genSidebar.genDefaultSidebar('./docs/interview', 'css')
+  //   },
+  // ],
+  // "/interview/javascript/": [
+  //   {
+  //     text: 'javascript',
+  //     children: genSidebar.genDefaultSidebar('./docs/interview', 'javascript')
+  //   },
+  // ],
+  // '/frontend/': [
+  //   {
+  //     text: '前端',
+  //     children: genSidebar.genDefaultSidebar('./docs/frontend', '', true)
+  //   },
+  // ],
   // '/frontend/': [
   //   {
   //     text: '前端',
