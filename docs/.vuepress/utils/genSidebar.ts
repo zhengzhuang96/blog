@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 18:05:41
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 09:30:04
+ * @LastEditTime: 2022-08-09 09:53:34
  * @Description: 
  */
 // docs/.vuepress/utils/genSidebar.js
@@ -23,19 +23,15 @@ function cmpMarkDown(md1, md2) {
 function getMarkDownList(path, is_sort) {
   var list = new Array();
   if (typeof path == "string" && typeof is_sort == "boolean") {
-    // console.log('path', path)
     let file_list = fs.readdirSync(path);
 
     // let info = fs.statSync(path);
-    // console.log('info', info.isDirectory())
     for (let i = 0; i < file_list.length; i++) {
       let file = file_list[i];
       // 判断是否是文件夹
       let info = fs.statSync(path + "/" + file);
       if (info.isDirectory()) {
-        // console.log('file', file)
         let md_list = getMarkDownList(path + "/" + file, is_sort);
-        console.log('md_list', md_list)
         // TODO: 获取文件夹下的md文档列表
         // md_list.forEach(function (item, index) {
         //   // list.push(item);
@@ -117,7 +113,6 @@ export const genDefaultSidebar = (path: any, name: any, version: any, is_sort: a
     object.children = new Array();
 
     let md_list = getMarkDownList(target_path, is_sort);
-    console.log(md_list, md_list.length);
     for (let i = 0; i < md_list.length; i++) {
       let md = md_list[i];
       let ls = md.split(".");
@@ -133,6 +128,5 @@ export const genDefaultSidebar = (path: any, name: any, version: any, is_sort: a
     }
   }
   result.push(object);
-  // console.log(result);
   return result;
 }
