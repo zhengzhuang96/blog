@@ -1,7 +1,7 @@
 # About Me
 Hello, I'm Zheng, born in 1996. I am a front-end development engineer.
 
-你好，我是zhengzhuang，出生在1996年。我是一名前端开发工程师。
+你好，我是郑壮，出生在1996年。我是一名前端开发工程师。
 
 Individuals just prefer to research technology, share technology, record their learning moments, and aspire to make their technology more comprehensive upgrade, I have been on the road.
 
