@@ -15,5 +15,8 @@
     "@vuepress/client": "2.0.0-beta.49",
     "vue": "^3.2.37",
     "vuepress": "2.0.0-beta.49"
+  },
+  "dependencies": {
+    "pinyin": "3.0.0-alpha.5"
   }
 }

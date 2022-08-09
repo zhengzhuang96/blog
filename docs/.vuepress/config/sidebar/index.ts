@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 09:48:11
+ * @LastEditTime: 2022-08-09 10:40:36
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -16,12 +16,12 @@ export const sidebar: SidebarConfig = {
   '/interview/node/': genDefaultSidebar('./interview/node', 'node', '面试题', true, 2),
   '/interview/html/': genDefaultSidebar('./interview/html', 'html', '面试题', true, 2),
   '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter', '面试题', true, 2),
-  '/interview/编程/': genDefaultSidebar('./interview/编程', '编程', '面试题', true, 2),
-  '/interview/工程化/': genDefaultSidebar('./interview/工程化', '工程化', '面试题', true, 2),
-  '/interview/算法/': genDefaultSidebar('./interview/算法', '算法', '面试题', true, 2),
-  '/interview/网络/': genDefaultSidebar('./interview/网络', '网络', '面试题', true, 2),
-  '/interview/性能/': genDefaultSidebar('./interview/性能', '性能', '面试题', true, 2),
-  '/interview/真题宝典/': genDefaultSidebar('./interview/真题宝典', '真题宝典', '面试题', true, 2),
+  '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题', '面试题', true, 2),
+  '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化', '面试题', true, 2),
+  '/interview/algorithm/': genDefaultSidebar('./interview/algorithm', '算法', '面试题', true, 2),
+  '/interview/network/': genDefaultSidebar('./interview/network', '网络', '面试题', true, 2),
+  '/interview/performance/': genDefaultSidebar('./interview/performance', '性能', '面试题', true, 2),
+  '/interview/frequent/': genDefaultSidebar('./interview/frequent', '常考题', '面试题', true, 2),
   '/frontend/': genDefaultSidebar('./frontend', '前端', '', false, 3),
   '/docker/': genDefaultSidebar('./docker', 'docker', '', false, 3),
   '/android/': genDefaultSidebar('./android', 'android', '', false, 3),

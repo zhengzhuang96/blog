@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 09:47:16
+ * @LastEditTime: 2022-08-09 10:40:32
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -49,27 +49,27 @@ export const navbar: NavbarConfig = [
       },
       {
         text: '编程',
-        link: '/interview/编程/',
+        link: '/interview/encoding/',
       },
       {
         text: '工程化',
-        link: '/interview/工程化/',
+        link: '/interview/engineering/',
       },
       {
         text: '算法',
-        link: '/interview/算法/',
+        link: '/interview/algorithm/',
       },
       {
         text: '网络',
-        link: '/interview/网络/',
+        link: '/interview/network/',
       },
       {
         text: '性能',
-        link: '/interview/性能/',
+        link: '/interview/performance/',
       },
       {
-        text: '真题宝典',
-        link: '/interview/真题宝典/',
+        text: '常考题',
+        link: '/interview/frequent/',
       },
     ],
   },

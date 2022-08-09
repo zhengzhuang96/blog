@@ -2,12 +2,13 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 18:05:41
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 09:53:34
+ * @LastEditTime: 2022-08-09 10:40:52
  * @Description: 
  */
 // docs/.vuepress/utils/genSidebar.js
 const fs = require("fs");
 const rpath = require("path");
+import pinyin from "pinyin";
 
 // 获取根目录
 var DOCS_PATH = rpath.resolve(__dirname, "../..");
@@ -107,6 +108,7 @@ export const genDefaultSidebar = (path: any, name: any, version: any, is_sort: a
       depth = 2;
     }
     // object.text = name + "_" + version;
+    // console.log('name====>>>', name, pinyin(name, { segment: false }))
     object.text = name;
     object.collapsable = false;
     object.sidebarDepth = depth;
@@ -124,9 +126,11 @@ export const genDefaultSidebar = (path: any, name: any, version: any, is_sort: a
         iter.text = ls[0];
         // iter.path = ls[0];
       }
+      // console.log("===========", ls[0]);
       object.children.push(ls[0]);
     }
   }
   result.push(object);
+  // console.log('result', result)
   return result;
 }
