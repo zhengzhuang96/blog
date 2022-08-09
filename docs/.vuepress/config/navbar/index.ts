@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 10:40:32
+ * @LastEditTime: 2022-08-09 13:30:24
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -126,8 +126,8 @@ export const navbar: NavbarConfig = [
     ],
   },
   {
-    text: 'mac',
-    link: '/mac/',
+    text: '高效开发环境',
+    link: '/computer/',
   },
   {
     text: '数据库',

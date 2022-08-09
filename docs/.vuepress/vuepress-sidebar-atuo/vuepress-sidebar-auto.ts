@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 14:23:23
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 17:57:33
+ * @LastEditTime: 2022-08-09 14:53:40
  * @Description: 侧边栏
  */
 // const autosidebar = require('vuepress-auto-sidebar-doumjun')
@@ -65,7 +65,7 @@ function getGroupChildren(path, ele, root, pathTrue) {
       let children = [];
       let group: any = {};
       group.text = item.split('-')[0];
-      // group.collapsable = true;
+      group.collapsible = true;
       // group.sidebarDepth = 2;
       getGroupChildren(path + "/" + ele, item, children, pathTrue);
       group.children = children;

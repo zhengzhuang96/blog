@@ -2,35 +2,35 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 10:40:36
+ * @LastEditTime: 2022-08-09 14:51:53
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
 import { genDefaultSidebar } from "../../utils/genSidebar";
 
 export const sidebar: SidebarConfig = {
-  '/interview/css/': genDefaultSidebar('./interview/css', 'css', '面试题', true, 2),
-  '/interview/javascript/': genDefaultSidebar('./interview/javascript', 'javascript', '面试题', true, 2),
-  '/interview/vue/': genDefaultSidebar('./interview/vue', 'vue', '面试题', true, 2),
-  '/interview/react/': genDefaultSidebar('./interview/react', 'react', '面试题', true, 2),
-  '/interview/node/': genDefaultSidebar('./interview/node', 'node', '面试题', true, 2),
-  '/interview/html/': genDefaultSidebar('./interview/html', 'html', '面试题', true, 2),
-  '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter', '面试题', true, 2),
-  '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题', '面试题', true, 2),
-  '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化', '面试题', true, 2),
-  '/interview/algorithm/': genDefaultSidebar('./interview/algorithm', '算法', '面试题', true, 2),
-  '/interview/network/': genDefaultSidebar('./interview/network', '网络', '面试题', true, 2),
-  '/interview/performance/': genDefaultSidebar('./interview/performance', '性能', '面试题', true, 2),
-  '/interview/frequent/': genDefaultSidebar('./interview/frequent', '常考题', '面试题', true, 2),
-  '/frontend/': genDefaultSidebar('./frontend', '前端', '', false, 3),
-  '/docker/': genDefaultSidebar('./docker', 'docker', '', false, 3),
-  '/android/': genDefaultSidebar('./android', 'android', '', false, 3),
-  '/egg/': genDefaultSidebar('./egg', 'egg', '', false, 3),
-  '/flutter/': genDefaultSidebar('./flutter', 'flutter', '', false, 3),
-  '/git/': genDefaultSidebar('./git', 'git', '', false, 3),
-  '/go/gin/': genDefaultSidebar('./go/gin', 'gin', '', false, 3),
-  '/mac/': genDefaultSidebar('./mac', '', '', false, 3),
-  '/mysql/': genDefaultSidebar('./mysql', '', '', false, 3),
+  '/interview/css/': genDefaultSidebar('./interview/css', 'css'),
+  '/interview/javascript/': genDefaultSidebar('./interview/javascript', 'javascript'),
+  '/interview/vue/': genDefaultSidebar('./interview/vue', 'vue'),
+  '/interview/react/': genDefaultSidebar('./interview/react', 'react'),
+  '/interview/node/': genDefaultSidebar('./interview/node', 'node'),
+  '/interview/html/': genDefaultSidebar('./interview/html', 'html'),
+  '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter'),
+  '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题'),
+  '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化'),
+  '/interview/algorithm/': genDefaultSidebar('./interview/algorithm', '算法'),
+  '/interview/network/': genDefaultSidebar('./interview/network', '网络'),
+  '/interview/performance/': genDefaultSidebar('./interview/performance', '性能'),
+  '/interview/frequent/': genDefaultSidebar('./interview/frequent', '常考题'),
+  '/frontend/': genDefaultSidebar('./frontend'),
+  '/docker/': genDefaultSidebar('./docker', 'docker'),
+  '/android/': genDefaultSidebar('./android', 'android'),
+  '/egg/': genDefaultSidebar('./egg', 'egg'),
+  '/flutter/': genDefaultSidebar('./flutter', 'flutter'),
+  '/git/': genDefaultSidebar('./git', 'git'),
+  '/go/gin/': genDefaultSidebar('./go/gin', 'gin'),
+  '/computer/': genDefaultSidebar('./computer', '高效开发环境'),
+  '/mysql/': genDefaultSidebar('./mysql', ''),
 
   // '/frontend/': [
   //   {
