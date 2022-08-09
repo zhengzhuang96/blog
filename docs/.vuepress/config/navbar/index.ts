@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 13:30:24
+ * @LastEditTime: 2022-08-09 14:59:06
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -16,36 +16,28 @@ export const navbar: NavbarConfig = [
     text: '面试',
     children: [
       {
-        text: 'css',
-        link: '/interview/css/',
-      },
-      {
         text: 'javascript',
         link: '/interview/javascript/',
       },
       {
-        text: 'vue',
-        link: '/interview/vue/',
-      },
-      {
-        text: 'react',
-        link: '/interview/react/',
-      },
-      {
-        text: 'node',
-        link: '/interview/node/',
+        text: 'css',
+        link: '/interview/css/',
       },
       {
         text: 'html',
         link: '/interview/html/',
       },
       {
-        text: 'flutter',
-        link: '/interview/flutter/',
+        text: 'react',
+        link: '/interview/react/',
       },
       {
-        text: 'css',
-        link: '/interview/css/',
+        text: 'vue',
+        link: '/interview/vue/',
+      },
+      {
+        text: 'node',
+        link: '/interview/node/',
       },
       {
         text: '编程',
@@ -70,6 +62,10 @@ export const navbar: NavbarConfig = [
       {
         text: '常考题',
         link: '/interview/frequent/',
+      },
+      {
+        text: 'flutter',
+        link: '/interview/flutter/',
       },
     ],
   },
