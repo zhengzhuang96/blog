@@ -2,18 +2,35 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 22:10:36
+ * @LastEditTime: 2022-08-09 09:48:11
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
-import genSidebar from "../../utils/genSidebar";
+import { genDefaultSidebar } from "../../utils/genSidebar";
 
 export const sidebar: SidebarConfig = {
-  '/interview/css/': genSidebar.genDefaultSidebar('./interview/css', 'css', '面试题', true, 2),
-  '/interview/javascript/': genSidebar.genDefaultSidebar('./interview/javascript', 'javascript', '面试题', true, 2),
-  '/frontend/': genSidebar.genDefaultSidebar('./frontend', '前端', '', false, 3),
-  '/docker/': genSidebar.genDefaultSidebar('./docker', 'docker', '', false, 3),
-  '/android/': genSidebar.genDefaultSidebar('./android', 'android', '', false, 3),
+  '/interview/css/': genDefaultSidebar('./interview/css', 'css', '面试题', true, 2),
+  '/interview/javascript/': genDefaultSidebar('./interview/javascript', 'javascript', '面试题', true, 2),
+  '/interview/vue/': genDefaultSidebar('./interview/vue', 'vue', '面试题', true, 2),
+  '/interview/react/': genDefaultSidebar('./interview/react', 'react', '面试题', true, 2),
+  '/interview/node/': genDefaultSidebar('./interview/node', 'node', '面试题', true, 2),
+  '/interview/html/': genDefaultSidebar('./interview/html', 'html', '面试题', true, 2),
+  '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter', '面试题', true, 2),
+  '/interview/编程/': genDefaultSidebar('./interview/编程', '编程', '面试题', true, 2),
+  '/interview/工程化/': genDefaultSidebar('./interview/工程化', '工程化', '面试题', true, 2),
+  '/interview/算法/': genDefaultSidebar('./interview/算法', '算法', '面试题', true, 2),
+  '/interview/网络/': genDefaultSidebar('./interview/网络', '网络', '面试题', true, 2),
+  '/interview/性能/': genDefaultSidebar('./interview/性能', '性能', '面试题', true, 2),
+  '/interview/真题宝典/': genDefaultSidebar('./interview/真题宝典', '真题宝典', '面试题', true, 2),
+  '/frontend/': genDefaultSidebar('./frontend', '前端', '', false, 3),
+  '/docker/': genDefaultSidebar('./docker', 'docker', '', false, 3),
+  '/android/': genDefaultSidebar('./android', 'android', '', false, 3),
+  '/egg/': genDefaultSidebar('./egg', 'egg', '', false, 3),
+  '/flutter/': genDefaultSidebar('./flutter', 'flutter', '', false, 3),
+  '/git/': genDefaultSidebar('./git', 'git', '', false, 3),
+  '/go/gin/': genDefaultSidebar('./go/gin', 'gin', '', false, 3),
+  '/mac/': genDefaultSidebar('./mac', '', '', false, 3),
+  '/mysql/': genDefaultSidebar('./mysql', '', '', false, 3),
 
   // '/frontend/': [
   //   {

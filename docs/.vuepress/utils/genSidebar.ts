@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-08-08 18:05:41
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-08 22:09:33
+ * @LastEditTime: 2022-08-09 09:30:04
  * @Description: 
  */
 // docs/.vuepress/utils/genSidebar.js
@@ -98,46 +98,41 @@ function trimRight(string) {
   return undefined;
 }
 
-var genSidebar = {
-  // 生成侧边栏
-  genDefaultSidebar: function (path: any, name: any, version: any, is_sort: any, depth: number) {
-    var result = new Array();
-    var object: any = new Object();
-    if (
-      typeof path == "string" &&
-      typeof name == "string" &&
-      typeof version == "string"
-    ) {
-      let target_path = rpath.resolve(DOCS_PATH, path);
-      if (typeof depth != "number") {
-        depth = 2;
-      }
-      // object.text = name + "_" + version;
-      object.text = name;
-      object.collapsable = false;
-      object.sidebarDepth = depth;
-      object.children = new Array();
-
-      let md_list = getMarkDownList(target_path, is_sort);
-      console.log(md_list, md_list.length);
-      for (let i = 0; i < md_list.length; i++) {
-        let md = md_list[i];
-        let ls = md.split(".");
-        let iter: any = new Object();
-        if (ls.length > 2) {
-          iter.text = ls[1];
-          // iter.path = ls[0] + "." + ls[1];
-        } else {
-          iter.text = ls[0];
-          // iter.path = ls[0];
-        }
-        object.children.push(ls[0]);
-      }
+export const genDefaultSidebar = (path: any, name: any, version: any, is_sort: any, depth: number) => {
+  var result = new Array();
+  var object: any = new Object();
+  if (
+    typeof path == "string" &&
+    typeof name == "string" &&
+    typeof version == "string"
+  ) {
+    let target_path = rpath.resolve(DOCS_PATH, path);
+    if (typeof depth != "number") {
+      depth = 2;
     }
-    result.push(object);
-    // console.log(result);
-    return result;
-  },
-};
+    // object.text = name + "_" + version;
+    object.text = name;
+    object.collapsable = false;
+    object.sidebarDepth = depth;
+    object.children = new Array();
 
-export default genSidebar;
+    let md_list = getMarkDownList(target_path, is_sort);
+    console.log(md_list, md_list.length);
+    for (let i = 0; i < md_list.length; i++) {
+      let md = md_list[i];
+      let ls = md.split(".");
+      let iter: any = new Object();
+      if (ls.length > 2) {
+        iter.text = ls[1];
+        // iter.path = ls[0] + "." + ls[1];
+      } else {
+        iter.text = ls[0];
+        // iter.path = ls[0];
+      }
+      object.children.push(ls[0]);
+    }
+  }
+  result.push(object);
+  // console.log(result);
+  return result;
+}
