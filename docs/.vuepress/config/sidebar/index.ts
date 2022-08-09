@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 14:51:53
+ * @LastEditTime: 2022-08-09 15:04:21
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -30,7 +30,7 @@ export const sidebar: SidebarConfig = {
   '/git/': genDefaultSidebar('./git', 'git'),
   '/go/gin/': genDefaultSidebar('./go/gin', 'gin'),
   '/computer/': genDefaultSidebar('./computer', '高效开发环境'),
-  '/mysql/': genDefaultSidebar('./mysql', ''),
+  '/mysql/': genDefaultSidebar('./mysql', 'mysql'),
 
   // '/frontend/': [
   //   {
