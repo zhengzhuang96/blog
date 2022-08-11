@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-09 14:59:06
+ * @LastEditTime: 2022-08-11 14:10:57
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -46,10 +46,6 @@ export const navbar: NavbarConfig = [
       {
         text: '工程化',
         link: '/interview/engineering/',
-      },
-      {
-        text: '算法',
-        link: '/interview/algorithm/',
       },
       {
         text: '网络',

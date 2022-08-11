@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-11 14:08:20
+ * @LastEditTime: 2022-08-11 14:11:18
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
@@ -18,7 +18,6 @@ export const sidebar: SidebarConfig = {
   '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter'),
   '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题'),
   '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化'),
-  '/interview/algorithm/': genDefaultSidebar('./interview/algorithm', '算法'),
   '/interview/http/': genDefaultSidebar('./interview/http', '网络'),
   '/interview/performance/': genDefaultSidebar('./interview/performance', '性能'),
   '/frontend/': genDefaultSidebar('./frontend'),
