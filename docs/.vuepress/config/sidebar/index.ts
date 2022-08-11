@@ -2,24 +2,25 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:58:21
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-11 14:11:18
+ * @LastEditTime: 2022-08-11 15:12:42
  * @Description: In User Settings Edit
  */
 import { SidebarConfig } from "vuepress";
 import { genDefaultSidebar } from "../../utils/genSidebar";
 
 export const sidebar: SidebarConfig = {
-  '/interview/css/': genDefaultSidebar('./interview/css', 'css'),
-  '/interview/javascript/': genDefaultSidebar('./interview/javascript', 'javascript'),
-  '/interview/vue/': genDefaultSidebar('./interview/vue', 'vue'),
-  '/interview/react/': genDefaultSidebar('./interview/react', 'react'),
-  '/interview/node/': genDefaultSidebar('./interview/node', 'node'),
-  '/interview/html/': genDefaultSidebar('./interview/html', 'html'),
-  '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter'),
-  '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题'),
-  '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化'),
-  '/interview/http/': genDefaultSidebar('./interview/http', '网络'),
-  '/interview/performance/': genDefaultSidebar('./interview/performance', '性能'),
+  // '/interview/css/': genDefaultSidebar('./interview/css', 'css'),
+  // '/interview/javascript/': genDefaultSidebar('./interview/javascript', 'javascript'),
+  // '/interview/vue/': genDefaultSidebar('./interview/vue', 'vue'),
+  // '/interview/react/': genDefaultSidebar('./interview/react', 'react'),
+  // '/interview/node/': genDefaultSidebar('./interview/node', 'node'),
+  // '/interview/html/': genDefaultSidebar('./interview/html', 'html'),
+  // '/interview/flutter/': genDefaultSidebar('./interview/flutter', 'flutter'),
+  // '/interview/encoding/': genDefaultSidebar('./interview/encoding', '编程题'),
+  // '/interview/engineering/': genDefaultSidebar('./interview/engineering', '工程化'),
+  // '/interview/http/': genDefaultSidebar('./interview/http', '网络'),
+  // '/interview/performance/': genDefaultSidebar('./interview/performance', '性能'),
+  '/interview/': genDefaultSidebar('./interview'),
   '/frontend/': genDefaultSidebar('./frontend'),
   '/docker/': genDefaultSidebar('./docker', 'docker'),
   '/android/': genDefaultSidebar('./android', 'android'),

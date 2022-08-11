@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-11 14:13:37
+ * @LastEditTime: 2022-08-11 15:12:28
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -14,52 +14,53 @@ export const navbar: NavbarConfig = [
   },
   {
     text: '面试',
-    children: [
-      {
-        text: 'javascript',
-        link: '/interview/javascript/',
-      },
-      {
-        text: 'css',
-        link: '/interview/css/',
-      },
-      {
-        text: 'html',
-        link: '/interview/html/',
-      },
-      {
-        text: 'react',
-        link: '/interview/react/',
-      },
-      {
-        text: 'vue',
-        link: '/interview/vue/',
-      },
-      {
-        text: 'node',
-        link: '/interview/node/',
-      },
-      {
-        text: '编程',
-        link: '/interview/encoding/',
-      },
-      {
-        text: '工程化',
-        link: '/interview/engineering/',
-      },
-      {
-        text: '网络',
-        link: '/interview/http/',
-      },
-      {
-        text: '性能',
-        link: '/interview/performance/',
-      },
-      {
-        text: 'flutter',
-        link: '/interview/flutter/',
-      },
-    ],
+    link: '/interview/',
+    // children: [
+    //   {
+    //     text: 'javascript',
+    //     link: '/interview/javascript/',
+    //   },
+    //   {
+    //     text: 'css',
+    //     link: '/interview/css/',
+    //   },
+    //   {
+    //     text: 'html',
+    //     link: '/interview/html/',
+    //   },
+    //   {
+    //     text: 'react',
+    //     link: '/interview/react/',
+    //   },
+    //   {
+    //     text: 'vue',
+    //     link: '/interview/vue/',
+    //   },
+    //   {
+    //     text: 'node',
+    //     link: '/interview/node/',
+    //   },
+    //   {
+    //     text: '编程',
+    //     link: '/interview/encoding/',
+    //   },
+    //   {
+    //     text: '工程化',
+    //     link: '/interview/engineering/',
+    //   },
+    //   {
+    //     text: '网络',
+    //     link: '/interview/http/',
+    //   },
+    //   {
+    //     text: '性能',
+    //     link: '/interview/performance/',
+    //   },
+    //   {
+    //     text: 'flutter',
+    //     link: '/interview/flutter/',
+    //   },
+    // ],
   },
   {
     text: '前端',
