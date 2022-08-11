@@ -2,7 +2,7 @@
  * @Author: {zhengzhuang}
  * @Date: 2022-07-29 17:46:39
  * @LastEditors: {zhengzhuang}
- * @LastEditTime: 2022-08-11 14:10:57
+ * @LastEditTime: 2022-08-11 14:13:37
  * @Description: In User Settings Edit
  */
 import { NavbarConfig } from "vuepress";
@@ -49,15 +49,11 @@ export const navbar: NavbarConfig = [
       },
       {
         text: '网络',
-        link: '/interview/network/',
+        link: '/interview/http/',
       },
       {
         text: '性能',
         link: '/interview/performance/',
-      },
-      {
-        text: '常考题',
-        link: '/interview/frequent/',
       },
       {
         text: 'flutter',
