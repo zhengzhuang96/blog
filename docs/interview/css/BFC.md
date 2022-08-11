@@ -1,16 +1,3 @@
-<!-- ---
-title: BFC
-date: 2022-08-08 16:54:21
-permalink: /interview/css/BFC
-categories:
-  - 技术
-  - 技术文档
-tags:
-  - 
-author:
-  name: xugaoyi
-  link: https://github.com/xugaoyi
---- -->
 # BFC
 
 ### 何为 BFC
