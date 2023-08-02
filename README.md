@@ -173,7 +173,7 @@ From here you can find all my blog links
 
 ## 数据流
 
-- [**dva**](https://github.com/dvajs/dva) - 我写的数据流，基于 redux。
+- [**dva**](https://github.com/dvajs/dva) - 数据流，基于 redux。
 - [**jotai**](https://github.com/pmndrs/jotai)
 - [**immer**](https://github.com/mweststrate/immer)
 - [**mobx**](https://github.com/mobxjs/mobx)
